@@ -6,9 +6,17 @@ export default function Menu(){
     return(
         <div className="menu">
             <a  className="social" href="https://youtube.com/c/sujeitoprogramador">
-                <BsYoutube color="#FFF" size={24} />
             </a>
-            <h1>Menu</h1>
+                <BsYoutube color="black" size={34} />
+            <a className="social" href="https://instagram.com/sujeitoprogramador">
+            </a>
+                <BsInstagram color="black" size={34} />
+
+            
+            
+            <Link className="menu-item" to="/links">
+                Meus Links
+            </Link>
         </div>
     )
 }

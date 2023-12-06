@@ -1,31 +1,27 @@
-
-
-body {
-    background-color: rgb(220, 250, 231);
+.links.container{
+    max-width: 1120%;
+    margin: 32px auto 10px auto;
+    
+   
 }
 
-.link-container{
-    max-width: 1000px;
-    margin: 32px auto 0 auto;
-    border-radius: 10px;
-}
-
-.link-header{
+.links-header{
     display: flex;
     flex-direction: row;
-    font-family: gotham;
-    font-size: 25px;
+    align-items: center;
+    
 }
-s
-.link-header svg{
+
+.links-header svg{
     margin-right: 14px;
+    align-self: center;
 }
 
-.link-header h1{
-    color: #000000;
+.links-header h1{
+    color: #23f179;
 }
 
-.link-item{
+.links-item{
     width: 700px;
     display: flex;
     align-items: center;
@@ -33,27 +29,30 @@ s
     margin-top: 8px;
 }
 
-.link-item:last-child{
-    margin-bottom:18px;
+
+.links-item:last-child{
+    margin-bottom: 18px;
 }
+
 
 .link{
     border:0;
-    width:100%;
+    width: 100%;
     min-width: 80%;
-    border-radius: 8px;
-    height:46px;
-    background-color: rgb(113, 212, 86);
+    border-radius: 4px;
+    height: 46px;
+    background-color:  rgb(47,79,47, 0.15);
     margin-right: 14px;
     display: flex;
     align-items: center;
-    padding:0 14px;
+    padding: 0 14px;
     font-size: 18px;
-    color: #FFF;
+    color: black;
+    font-weight: bold;
 }
 
 .link svg{
-    margin-right: 14px;
+    margin-right:14px;
 }
 
 .link{
@@ -64,23 +63,27 @@ s
 
 .link-delete{
     border: 0;
-    background: rgb(47,79,47, 0.15) ;
+    background: transparent;
+}
+.empty-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+    color: black;
 }
 
-@media (max-width:715px){
-    .link-container{
+@media (max-width: 715px){
+    .links-container{
         width: 90%;
+        margin: 32px auto 10px auto;
     }
-
     .logo h1{
         font-size: 40px;
     }
-
-    .link-item{
+    .links-item{
         width: 100%;
     }
-
-    .link {
+    .links{
         width: 100%;
     }
 }
